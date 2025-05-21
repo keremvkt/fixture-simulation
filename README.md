@@ -2,5 +2,8 @@
 
 cp .env.example .env
 
-docker-compose up -d --build
+./vendor/bin/sail up -d 
 
+## To Start Worker
+
+./vendor/bin/sail artisan queue:work
